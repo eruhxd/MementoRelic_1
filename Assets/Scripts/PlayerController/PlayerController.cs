@@ -371,6 +371,7 @@ namespace PlayerController
         #if UNITY_EDITOR
         private void OnGUI()
         {
+            return;
             GUILayout.BeginHorizontal();
             string rootStateName = _currentState.Name;
             GUILayout.Label($"<color=black><size=20>State: {rootStateName}</size></color>");
