@@ -25,7 +25,8 @@ namespace PlayerController
         #endregion
         
         public PlayerStates CurrentState => _currentState.StateKey;
-        
+        public PlayerStates LastState;
+
         #region Private variables
         private Rigidbody2D _rb2d;
         private RaycastInfo _raycastInfo;

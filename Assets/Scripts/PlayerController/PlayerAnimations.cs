@@ -44,7 +44,13 @@ namespace PlayerController
             _animator.SetFloat(_ySpeedHash, _player.Velocity.y);
             _animator.SetBool(_isGroundedHash, _player.IsGrounded);
             _animator.SetBool(_isSlidingHash, _player.IsWallSliding);
-            _animator.SetBool(_isDashingHash, _player.CurrentState == PlayerStates.Dashing);
+
+            if ( _player.CurrentState != _player.LastState && _player.CurrentState == PlayerStates.Dashing) {
+                Debug.Log(_player.CurrentState);
+                _animator.SetBool(_isDashingHash, _player.CurrentState == PlayerStates.Dashing);
+            }
+
+            _player.LastState = _player.CurrentState;
         }
         
         private void FlipSprite()
