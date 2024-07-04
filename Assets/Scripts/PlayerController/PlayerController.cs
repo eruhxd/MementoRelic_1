@@ -286,6 +286,7 @@ namespace PlayerController
             {
                 DashRequest = true;
                 _lastPressedDashTime = Data.dashInputBufferTime; // reset buffer time
+                SetGravityScale (0);
             }
         }
 
@@ -297,6 +298,7 @@ namespace PlayerController
             if (_lastPressedDashTime <= 0)
             {
                 DashRequest = false;
+                SetGravityScale(1);
             }
         }
         #endregion
