@@ -262,6 +262,7 @@ MonoBehaviour:
   _dashVFXPrefab: {fileID: 260539179029066046, guid: e02b017b03c757c4ca5cbe16eb60a6ec, type: 3}
   _flipDirectionVFXPrefab: {fileID: 260539179029066046, guid: 554c4bb135372e444a1d10cd335e3ece, type: 3}
   _fallDustVFXPrefab: {fileID: 260539179029066046, guid: ee0b56427e5ac8d4ebca6b8fe5876abf, type: 3}
+  LastState: 0
 --- !u!114 &3288018760039779216
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -296,10 +297,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 8650759686709486247}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d30c4b45bf9a62488744f1979c5bfb5, type: 3}
+  m_Script: {fileID: 11500000, guid: 9fa6438927dfe7c44b4833831e0d20ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthInitial: 1
+  loadEndIn: 0.5
+  anim: {fileID: 288412870432373831}
 --- !u!1 &8944917453443969712
 GameObject:
   m_ObjectHideFlags: 0
