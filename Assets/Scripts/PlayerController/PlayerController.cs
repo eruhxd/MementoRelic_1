@@ -23,6 +23,7 @@ namespace PlayerController
         [SerializeField] private Transform _flipDirectionVFXPrefab;
         [SerializeField] private Transform _fallDustVFXPrefab;
         #endregion
+        public ElBool _canDash;
         
         public PlayerStates CurrentState => _currentState.StateKey;
         public PlayerStates LastState;
@@ -87,6 +88,7 @@ namespace PlayerController
             SetGravityScale(Data.gravityScale);
 
             IsFacingRight = true;
+            canDash = _canDash.valor;
         }
 
         protected override void Update()
