@@ -34,8 +34,9 @@ namespace PlayerController
         private PlayerInputActions _playerInputActions;
         private InputAction _movementAction;
         #endregion
-        
+
         #region Dash Parameters
+        [SerializeField] bool canDash = true;
         private float _lastPressedDashTime;
         private bool _isDashRefilling;
         public bool IsDashActive { get; set; } // set to true when grounded, and false when dashing
@@ -268,6 +269,11 @@ namespace PlayerController
         #endregion
         
         #region Dash Functions
+
+        public void ChangeCanDash( bool newState)
+        {
+            canDash = newState;
+        }
         public void RefillDash()
         {
             StartCoroutine(nameof(PerformRefillDash));
@@ -282,6 +288,10 @@ namespace PlayerController
         
         private void OnDashAction(InputAction.CallbackContext context)
         {
+            if(canDash == false)
+            {
+                return;
+            }
             if (context.ReadValueAsButton())
             {
                 DashRequest = true;

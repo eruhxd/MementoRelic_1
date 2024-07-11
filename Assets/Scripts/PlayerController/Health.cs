@@ -39,7 +39,7 @@ public class GameManager : MonoBehaviour
     public void EndLevel()
     {
         // Reiniciamos el nivel.
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 
     }
 }

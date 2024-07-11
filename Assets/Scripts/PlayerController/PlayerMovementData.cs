@@ -83,6 +83,8 @@ namespace PlayerController
         [Range(0f, 0.1f)] public float wallSlideReleaseTime;
 
         [Header("DASH")]
+
+
         [Tooltip("Speed of the dash")]
         public float dashSpeed;
         [Tooltip("Duration of the dash")]
