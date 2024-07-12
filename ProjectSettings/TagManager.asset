@@ -7,6 +7,7 @@ TagManager:
   - Enemy
   - Ground
   - Background
+  - Cambio
   layers:
   - Default
   - TransparentFX
