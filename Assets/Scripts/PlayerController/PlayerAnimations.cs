@@ -34,6 +34,8 @@ namespace PlayerController
         {
             FlipSprite();
             
+            GameManager.Instance.invulnerable = _player.CurrentState == PlayerStates.Dashing? true: false;
+
             if (_player.CanDash && _player.DashRequest)
                 _animator.SetTrigger(_isDashingHash);
         }

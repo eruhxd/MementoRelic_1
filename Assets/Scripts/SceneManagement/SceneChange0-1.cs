@@ -7,17 +7,14 @@ using UnityEngine.SceneManagement;
 
 public class SceneChange01 : MonoBehaviour
 {
-    void Start()
-    {
+    public int indiceEscena;
 
-    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.tag == "Cambio")
+        if(collision.gameObject.tag == "Player")
         {
-            int actualScene = SceneManager.GetActiveScene().buildIndex;
-            SceneManager.LoadScene(actualScene + 1);
+            SceneManager.LoadScene(indiceEscena);
         }
     }
 

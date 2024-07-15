@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 7386781263360811245}
   - component: {fileID: 4257239333586567682}
   - component: {fileID: 4201460494015402266}
+  - component: {fileID: 2723796268090264915}
   m_Layer: 0
   m_Name: Carls1
   m_TagString: Enemy
@@ -247,3 +248,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0d2c2f4a619a6949bdc52c56c1e6053, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2723796268090264915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3290544911745714275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0e83758a1b61074388af1645b9c22f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 3404276921499364067}
+  rb2d: {fileID: 7386781263360811245}
