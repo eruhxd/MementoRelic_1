@@ -12,6 +12,9 @@ public class GameManager : MonoBehaviour
     private int vidas = 1;
     [SerializeField] float loadEndIn;
     [SerializeField] Animator anim;
+
+    public bool invulnerable;
+
     private void Awake()
     {
         if (Instance == null)
@@ -26,6 +29,8 @@ public class GameManager : MonoBehaviour
 
     public void PerderVida()
     {
+        if(invulnerable) return;
+
         vidas -= 1;
 
         if (vidas == 0)

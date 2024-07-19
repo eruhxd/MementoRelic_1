@@ -8,6 +8,7 @@ TagManager:
   - Ground
   - Background
   - Cambio
+  - DashAttack
   layers:
   - Default
   - TransparentFX

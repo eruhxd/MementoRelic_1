@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42dcbefd7e5ad3a42a56ccf64c9eae0d, type: 3}
   m_Name: CanDash
   m_EditorClassIdentifier: 
-  valor: 0
+  valor: 1
