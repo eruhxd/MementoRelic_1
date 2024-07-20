@@ -90,4 +90,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eac165806983c15489f535463483f24a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  indiceEscena: 2
+  indiceEscena: 3
